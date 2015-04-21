@@ -1,0 +1,68 @@
+
+body {
+  background: url() no-repeat;
+  /*background-color:rgba(0,0,0,0.5);*/
+  background-image: url("off_airf.png");
+  background-size: 900px 670px;
+ /* background-width:900px;
+  height: 675px;*/
+  /*background-size: cover;*/
+  /*background-size: 100%;*/
+  /*background-color: #FFFFFF;*/
+  background-position: center;
+  font-family: Georgia, serif;
+  /*position: absolute;*/
+  /*background-size: contain;*/
+  /*background-repeat:no-repeat;*/
+  background-attachment:fixed;
+
+/*background-position:center;*/
+
+}
+
+#heading {
+	margin-left: 15%;
+	margin-top: 2%;
+	position: absolute;
+}
+
+#about {
+	margin-left: 25%;
+	margin-top: 2%;
+	position: absolute;
+}
+
+#resume {
+	margin-left: 35%;
+	margin-top: 2%;
+	position: absolute;
+}
+
+#contact {
+	margin-left: 45%;
+	margin-top: 2%;
+	position: absolute;
+}
+
+#project {
+	margin-left: 55%;
+	margin-top: 2%;
+	position: absolute;
+}
+
+#content {
+	/*opacity: 0.4;*/
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: .8em;
+	color: #FFFFFF;
+	margin-left: 19%;
+	margin-top: 7%;
+	position: absolute;
+	background-color: #000000;
+	width: 740px;
+	height: 525px;
+	/*border-style: solid;*/
+    background-color:rgba(0,0,0,0.8);
+    border-radius: 5px 5px 5px 5px;
+    
+}

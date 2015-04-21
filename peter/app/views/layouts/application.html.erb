@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peter Hahn</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h3 id="heading">Peter Hahn</h3>
+
+<div class="list">
+<a href="/" id="about" class="about" onClick="about_onClick();return false;">About</a><a href="/" id="resume" onClick="resume_onClick()">Resume</a><a href="/" id="contact" onClick="contact_onClick()">Contact</a>
+<a href="/" id="project" onClick="project_onClick()">Projects</a>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
