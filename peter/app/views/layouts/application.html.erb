@@ -2,16 +2,30 @@
 <html>
 <head>
   <title>Peter Hahn</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<h3 id="heading">Peter Hahn</h3>
+<link rel="stylesheet" href="animate.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Allan:bold" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Cardo" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lekton" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Molengo" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
 
+<body>
+<div id="bg-right"></div>
+<div id="bg-left"></div>
 <div class="list">
-<a href="/" id="about" class="about" onClick="about_onClick();return false;">About</a><a href="/" id="resume" onClick="resume_onClick()">Resume</a><a href="/" id="contact" onClick="contact_onClick()">Contact</a>
-<a href="/" id="project" onClick="project_onClick()">Projects</a>
+<a href="/" id="about" class="about" onClick="about_onClick();return false;">About</a><a href="/" id="resume" onClick="resume_onClick();return false;">Resume</a><a href="/" id="contact" onClick="contact_onClick();return false;">Contact</a>
+<a href="/" id="project" onClick="project_onClick();return false;">Projects</a>
 </div>
 
 <%= yield %>

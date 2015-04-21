@@ -50,6 +50,16 @@ body {
 	position: absolute;
 }
 
+#photo {
+	width: 185px;
+	height: 200px;
+}
+
+#resume {
+	width: 385px;
+	height: 475px;
+}
+
 #content {
 	/*opacity: 0.4;*/
 	font-family: 'Arvo', Georgia, Times, serif;
@@ -65,4 +75,24 @@ body {
     background-color:rgba(0,0,0,0.8);
     border-radius: 5px 5px 5px 5px;
     
+}
+
+#bg-right {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 85%;
+  right: 0;
+  z-index: -1;
+}
+
+#bg-left {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 85%;
+  z-index: 0;
 }
