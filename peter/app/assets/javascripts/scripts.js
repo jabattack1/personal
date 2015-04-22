@@ -4,9 +4,11 @@ var say = "My name is Peter Hahn and I am a full stack Web Developer(.js, Ruby o
 var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, Ruby, HTML/CSS)</h2>";
 var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
 var headshot = "<img src='http://i1301.photobucket.com/albums/ag119/jabattack1/headshot_zpssoavnc6u.jpg' class='animated fadeIn' id='photo'>";
-var sites ="<a href=https://github.com/jabattack1 class='animated fadeIn' id='sites_github'>GitHub</a><a href=http://www.rebelsolo.com/ class='animated fadeIn' id='sites_rebel'>Rebel Solo</a>";
-
+var pointer = "<p class='animated fadeIn' id=sites_link>Links:</p>"
+var sites ="<a href=https://github.com/jabattack1 target=\"_blank\" class='animated fadeIn' id='sites_github'>GitHub</a><a href=http://www.rebelsolo.com/ target=\"_blank\" class='animated fadeIn' id='sites_rebel'>Rebel Solo (musician)</a>";
 var resume = "<iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" class='animated fadeIn' id='resume_doc'></iframe>";
+var projects ="<a href=http://www.seafoodbay.net/ target=\"_blank\" class='animated fadeIn' id='sites_seafood'>www.seafoodbay.net</a><a href=http://www.peterhahn.me/ target=\"_blank\" class='animated fadeIn' id='sites_peter'>www.peterhahn.me</a>"; 
+var contact ="<a href=\"mailto:peter.hahn@live.com\" class='animated fadeIn' id='contact_email'>peter.hahn@live.com</a><p class='animated fadeIn' id='contact_phone'>551-689-3517</p>"
 
 function about_onClick(e) {
 	console.log('about');
@@ -14,6 +16,7 @@ function about_onClick(e) {
 	$('#content').empty();
 	$('#content').append(template);
 	$('#content').append(headshot);
+	$('#content').append(pointer);
 	$('#content').append(sites);
 	$('#content').append(exp);
 
@@ -31,11 +34,13 @@ function resume_onClick() {
 function contact_onClick() {
 	console.log('contact');
 	$('#content').empty();
+	$('#content').append(contact);
    // alert('a_onClick');
   }
 
 function project_onClick() {
 	console.log('project');
 	$('#content').empty();
+	$('#content').append(projects);
    // alert('a_onClick');
   }
