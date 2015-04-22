@@ -1,8 +1,12 @@
 console.log("MOTHA!");
 
-var template = "<h3 class='animated fadeIn'>Peter Hahn</h3>";
+var say = "My name is Peter Hahn and I am a full stack Web Developer(.js, Ruby on Rails, HTML/CSS) currently living in Brooklyn, NY.  I have recently graduated from General Assembly(NYC campus), where I studied Ruby on Rails and JavaScript.  I feel that I am a solid candidate for your company because of my abilities as a Web Developer and also because of my very strong work ethic - I will be your workhorse if I am hired at your company.<br><br> I am proficient using .js, Ruby on Rails, and HTML/CSS.  My last project was for a mom-&-pop seafood restaurant (www.seafoodbay.net) in Philadelphia which involved designing a PSQL database, a Ruby on Rails back-end server, and implementing .js(HTML/CSS) front-end for user experience.  The project before involved designing a single-page game application called \“uBlank\” on Ruby on Rails back-end server using Backbone.js for front-end.<br><br>  I am also an experienced  IT technician - I have worked as a System Administrator, a Network Manager, and a Network Consultant in my previous jobs.  I have learned a great deal about working within a team structure and following company protocol during these years - I am confident that my transition into working as a Web Developer will be even more seamless because of my past experiences.<br><br>Thank you<br><br>Peter Hahn";
+var template = "<h3 class='animated fadeIn' id='name'>Peter Hahn</h3><h2 class='animated fadeIn' id='title'>Full Stack Developer (JavaScript, Ruby, HTML/CSS)</h2>";
+var exp = "<h2 class='animated fadeIn' id='exp'>"+say+"</h2>";
 var headshot = "<img src='http://i1301.photobucket.com/albums/ag119/jabattack1/headshot_zpssoavnc6u.jpg' class='animated fadeIn' id='photo'>";
-var resume = "<iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" width=\"740\" height=\"580\" class='animated fadeIn' id='resume'></iframe>";
+var sites ="<a href=https://github.com/jabattack1 class='animated fadeIn' id='sites_github'>GitHub</a><a href=http://www.rebelsolo.com/ class='animated fadeIn' id='sites_rebel'>Rebel Solo</a>";
+
+var resume = "<iframe src=\"https://docs.google.com/file/d/0B_QUho3Z8WoPck0xRjA5akRvYjA/preview\" class='animated fadeIn' id='resume_doc'></iframe>";
 
 function about_onClick(e) {
 	console.log('about');
@@ -10,6 +14,9 @@ function about_onClick(e) {
 	$('#content').empty();
 	$('#content').append(template);
 	$('#content').append(headshot);
+	$('#content').append(sites);
+	$('#content').append(exp);
+
 	// e.preventDefault();
 	// return false;
   }
